@@ -1,7 +1,7 @@
 
 # Curso de Git_GitHub 
 
-# Comandos
+## Comandos
 
 ### Configuraciones Globales
 
