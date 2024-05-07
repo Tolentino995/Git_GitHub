@@ -71,4 +71,4 @@ Nos creamos una cuenta, un repositorio propio donde lo tenemos que ir armando co
 
 **git push -u origin main**  “para subir los archivos desde ordenaro al repositorio ”
 
-git fre
+git fetch 
