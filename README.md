@@ -72,9 +72,9 @@
 
 **git push -u origin main**  (para subir los archivos desde ordenaro al repositorio)
 
-**git fetch (Esto descargara el historial sin los cambios)
+**git fetch** (Esto descargara el historial sin los cambios)
 
-** git pull (Esto descargara el hitorial y tambien los cambios)
+**git pull** (Esto descargara el hitorial y tambien los cambios)
 
 
 
