@@ -14,6 +14,7 @@
 "comando(ejemplo: git log --graph --decorate --all --oneline )"
 
 ---
+## Git
 
 **cd** "nombre donde me quiero desplazar"
 
