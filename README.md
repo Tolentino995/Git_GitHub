@@ -65,10 +65,8 @@
 
 ## GitHub
 
-Nos creamos una cuenta, un repositorio propio donde lo tenemos que ir armando como si fuera un muero de facebook. Ahora generamos una conexión con SSH
-
 **git remote add origin** “mas el link del repositorio para enlazar el repositorio con el ordenador”
 
 **git push -u origin main**  “para subir los archivos desde ordenaro al repositorio ”
 
-git fetch 
+
