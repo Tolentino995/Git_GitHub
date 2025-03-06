@@ -15,6 +15,8 @@
 
 ---
 
+## Git
+
 **cd** "nombre donde me quiero desplazar"
 
 **cd ..** (para atras)
@@ -67,6 +69,11 @@
 
 **git remote add origin** “mas el link del repositorio para enlazar el repositorio con el ordenador”
 
-**git push -u origin main**  “para subir los archivos desde ordenaro al repositorio ”
+**git push -u origin main**  (para subir los archivos desde ordenaro al repositorio)
+
+**git fetch (Esto descargara el historial sin los cambios)
+
+** git pull (Esto descargara el hitorial y tambien los cambios)
+
 
 
