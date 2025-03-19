@@ -16,8 +16,6 @@
 ---
 ## Git
 
-## Git
-
 **cd** "nombre donde me quiero desplazar"
 
 **cd ..** (para atras)
@@ -75,6 +73,10 @@
 **git fetch** (Esto descargara el historial sin los cambios)
 
 **git pull** (Esto descargara el hitorial y tambien los cambios)
+
+**git clone +SSH** (Puede clonar el repositorio personal autorizado)
+
+**git push** ()
 
 
 
