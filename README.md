@@ -116,7 +116,7 @@ git push -u origin main
 
 ---
 
-## 🌍 GitHub Comunidad (No son comandos)  
+## 🏆  GitHub Comunidad (No son comandos)  
 
 - **🔀 Fork** → Clonar un repositorio de otro usuario sin permisos de edición.  
 - **🔄 Sync Fork** → Mantener sincronizado tu Fork con el repositorio original.  
