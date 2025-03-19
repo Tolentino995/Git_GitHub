@@ -1,82 +1,144 @@
+# 🚀 Curso de Git & GitHub  
 
-# Curso de Git_GitHub 
+## 📌 Comandos esenciales  
 
-## Comandos
+### 🔧 Configuraciones Globales  
 
-### Configuraciones Globales
-
-**git config** --global [user.name](http://user.name/) "nombre"
-
-**git config** --global [user.email](http://user.email/) "correo"
-
-**git config**  --global alias."nombre del alias que queremos nosotros"
-
-"comando(ejemplo: git log --graph --decorate --all --oneline )"
-
----
-## Git
-
-**cd** "nombre donde me quiero desplazar"
-
-**cd ..** (para atras)
-
-**ls** (listado de carpeta donde me encuentro)
-
-**touch** (para crear un archivo)
-
-**git init** (para instanciarme)
-
-**git add + tab** y seleccionar lo que quiero añadir a mi commit (añadir elemento para hacer mi commit)
-
-**git status** (para ver el estado de mi carpeta)
-
-**git commit -m** "nombre que le quiero dar a mi commit" (hacer una versión de mi carpeta)
-
-**git checkout** "nombre del archivo para volver a su ultimo commit (poder desplazarnos)"
-
-“Tambien puede desaser cambios”
-
-**git reset** —hard “similiar a checkout pero con la diferecia de eliminar los de adelante”
-
-**git diff** (para ver las modificaciones antes de que hagamos un commit)
-
-**git tag** “El nombre que queramos para poder identificarlo” (nos podemos desplazar con el checkout y el nombre del tag)
-
-**git branch** (nombre de la rama) “Crear una nueva rama”
-
-**git branch** “para consultar las ramas”
-
-**git branch** -d (nombre de la rama) “para eliminar la rama”
-
-**git switch** (nombre de la rama) “Para desplazarme en cada rama”
-
-**git merge** (nombre de la rama) “Adjuntar o unir”
-
-**git stash** “Comit pero temporal”
-
-**git stash list** “lista de comit temporal”
-
-**git stash pop** “Se usa para recuperar los elemento que guardamos temporalmente”
-
-**git stash dop** “Se usa para eliminar los elemento que guardamos temporalmente”
-
-**git reflog** “Para ver todo lo que hemos realizado”
+```bash
+git config --global user.name "Tu Nombre"  # Configurar nombre de usuario
+git config --global user.email "tuemail@example.com"  # Configurar correo electrónico
+git config --global alias.[nombre_alias] "[comando]"  # Crear un alias personalizado
+```
+📌 *Ejemplo de alias útil:*  
+```bash
+git config --global alias.hist "log --graph --decorate --all --oneline"
+```
 
 ---
 
-## GitHub
+## 🖥️ Comandos básicos de Git  
 
-**git remote add origin** “mas el link del repositorio para enlazar el repositorio con el ordenador”
+### 📂 Navegación en la terminal  
 
-**git push -u origin main**  (para subir los archivos desde ordenaro al repositorio)
+```bash
+cd "nombre_carpeta"     # Entrar a una carpeta  
+cd ..                   # Ir a la carpeta anterior  
+ls                      # Listar archivos y carpetas  
+touch archivo.txt       # Crear un archivo vacío  
+```
 
-**git fetch** (Esto descargara el historial sin los cambios)
+### 🔨 Iniciar y trabajar con Git  
 
-**git pull** (Esto descargara el hitorial y tambien los cambios)
+```bash
+git init                # Inicializar un repositorio Git  
+git status              # Ver el estado de los archivos  
+git add archivo.txt     # Agregar un archivo al staging  
+git add .               # Agregar todos los archivos  
+git commit -m "Mensaje del commit"  # Guardar cambios con un mensaje  
+```
 
-**git clone +SSH** (Puede clonar el repositorio personal autorizado)
+📌 *Ejemplo:*  
+```bash
+git add index.html
+git commit -m "Añadí la estructura HTML inicial"
+```
 
-**git push** ()
+### 🔄 Revertir cambios  
 
+```bash
+git checkout archivo.txt   # Revertir cambios de un archivo a la última versión confirmada  
+git reset --hard           # Eliminar todos los cambios no confirmados  
+git diff                   # Ver diferencias antes de hacer commit  
+```
 
+### 🏷️ Trabajando con tags  
 
+```bash
+git tag v1.0               # Crear una etiqueta (versión)  
+git checkout v1.0          # Moverse a un tag específico  
+```
+
+---
+
+## 🌿 Trabajando con ramas  
+
+```bash
+git branch                # Ver todas las ramas  
+git branch nueva-rama     # Crear una nueva rama  
+git switch nueva-rama     # Cambiar a otra rama  
+git branch -d nueva-rama  # Eliminar una rama  
+git merge nombre-rama     # Unir ramas  
+```
+
+📌 *Ejemplo:*  
+```bash
+git branch feature-login
+git switch feature-login
+```
+
+---
+
+## 📌 Guardado temporal con Stash  
+
+```bash
+git stash                 # Guardar cambios temporalmente  
+git stash list            # Ver los cambios guardados  
+git stash pop             # Restaurar el último stash  
+git stash drop            # Eliminar un stash  
+```
+
+---
+
+## 🔍 Historial y recuperación  
+
+```bash
+git reflog                # Ver todas las acciones realizadas  
+```
+
+---
+
+## 🌎 Comandos para GitHub  
+
+```bash
+git remote add origin "URL-del-repo"  # Conectar repositorio local con GitHub  
+git push -u origin main               # Subir cambios a GitHub  
+git fetch                              # Obtener cambios remotos sin fusionarlos  
+git pull                               # Obtener y fusionar cambios remotos  
+git clone URL                          # Clonar un repositorio  
+git push                               # Subir cambios al repositorio  
+```
+
+📌 *Ejemplo:*  
+```bash
+git remote add origin https://github.com/usuario/repo.git
+git push -u origin main
+```
+
+---
+
+## 🌍 GitHub Comunidad (No son comandos)  
+
+- **🔀 Fork** → Clonar un repositorio de otro usuario sin permisos de edición.  
+- **🔄 Sync Fork** → Mantener sincronizado tu Fork con el repositorio original.  
+- **🤝 Contribute** → Proponer cambios a otro repositorio mediante un *Pull Request*.  
+
+---
+
+### ✨ Ejemplo de código bien estructurado  
+
+```bash
+# 🔀 Crear y cambiar a una nueva rama
+git branch feature-login  
+git switch feature-login  
+
+# 📌 Agregar cambios al área de staging
+git add index.html  
+
+# 💾 Confirmar cambios con un mensaje descriptivo
+git commit -m "Añadí la estructura HTML inicial"  
+
+# 🚀 Subir los cambios al repositorio remoto
+git push origin feature-login  
+```
+
+---
