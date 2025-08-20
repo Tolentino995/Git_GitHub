@@ -26,7 +26,7 @@ cd ..                   # Ir a la carpeta anterior
 ls                      # Listar archivos y carpetas  
 touch archivo.txt       # Crear un archivo vacío  
 ```
-### 🔐 Configuración de SSH en GitHub  
+## 🔐 Configuración de SSH en GitHub  
 
 1️⃣ Verificar si ya tenés claves SSH  
 ```bash
@@ -51,7 +51,7 @@ clip < ~/.ssh/id_ed25519.pub   # Copiar clave pública en Windows
 # En Linux/macOS sería:
 cat ~/.ssh/id_ed25519.pub
 ```
-Pega el contenido en **GitHub → Settings → SSH and GPG keys → New SSH key**.  
+- Pega el contenido en **GitHub → Settings → SSH and GPG keys → New SSH key**.  
 ---
 5️⃣ Probar la conexión con GitHub  
 ```bash
