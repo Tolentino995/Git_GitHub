@@ -26,6 +26,39 @@ cd ..                   # Ir a la carpeta anterior
 ls                      # Listar archivos y carpetas  
 touch archivo.txt       # Crear un archivo vacío  
 ```
+### 🔐 Configuración de SSH en GitHub  
+
+1️⃣ Verificar si ya tenés claves SSH  
+```bash
+ls -al ~/.ssh           # Listar claves existentes en la carpeta .ssh  
+```
+---
+2️⃣ Generar una nueva clave SSH  
+```bash
+ssh-keygen -t ed25519 -C "tu-email@ejemplo.com"
+```
+- Cuando te pregunte la ruta, presioná **Enter** para aceptar la ubicación por defecto (`~/.ssh/id_ed25519`).  
+- Si querés, podés ponerle una **passphrase** para más seguridad (opcional).  
+---
+3️⃣ Activar el **agente SSH**  
+```bash
+eval "$(ssh-agent -s)"   # Iniciar el agente SSH en segundo plano  
+ssh-add ~/.ssh/id_ed25519   # Agregar tu clave privada al agente  
+```
+4️⃣ Copiar tu **clave pública**  
+```bash
+clip < ~/.ssh/id_ed25519.pub   # Copiar clave pública en Windows  
+# En Linux/macOS sería:
+cat ~/.ssh/id_ed25519.pub
+```
+Pega el contenido en **GitHub → Settings → SSH and GPG keys → New SSH key**.  
+---
+5️⃣ Probar la conexión con GitHub  
+```bash
+ssh -T git@github.com
+```
+- Si todo está bien, te dirá:  
+  `Hi <tu-usuario>! You've successfully authenticated, but GitHub does not provide shell access.`  
 
 ### 🔨 Iniciar y trabajar con Git  
 
