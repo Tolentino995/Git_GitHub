@@ -100,7 +100,8 @@ git branch                # Ver todas las ramas
 git branch nueva-rama     # Crear una nueva rama  
 git switch nueva-rama     # Cambiar a otra rama  
 git branch -d nueva-rama  # Eliminar una rama  
-git merge nombre-rama     # Unir ramas  
+git merge nombre-rama     # Unir ramas
+git rabase main           # Para unir la rama con la rama principal
 ```
 
 📌 *Ejemplo:*  
@@ -111,16 +112,6 @@ git switch feature-login
 
 ---
 
-## 📌 Guardado temporal con Stash  
-
-```bash
-git stash                 # Guardar cambios temporalmente  
-git stash list            # Ver los cambios guardados  
-git stash pop             # Restaurar el último stash  
-git stash drop            # Eliminar un stash  
-```
-
----
 ## 📦 Git Stash 
 
 - Se utiliza para guardar temporalmente los cambios en tu directorio de trabajo (sin hacer commit) y dejar el área limpia.
