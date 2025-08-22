@@ -121,7 +121,7 @@ git stash drop            # Eliminar un stash
 ```
 
 ---
-## 📦 Git Stash – Guía Rápida
+## 📦 Git Stash 
 
 - Se utiliza para guardar temporalmente los cambios en tu directorio de trabajo (sin hacer commit) y dejar el área limpia.
 
