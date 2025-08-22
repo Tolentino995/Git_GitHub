@@ -99,8 +99,9 @@ git checkout v1.0          # Moverse a un tag específico
 
 ```bash
 git branch                # Ver todas las ramas  
-git branch nueva-rama     # Crear una nueva rama  
-git switch nueva-rama     # Cambiar a otra rama  
+git branch -c nueva-rama     # Crear una nueva rama  
+git branch -D rama     # Elimina una nueva rama  
+git switch nueva-rama     # Cambiar a otra rama
 git branch -d nueva-rama  # Eliminar una rama  
 git merge nombre-rama     # Unir ramas
 git rabase main           # Para unir la rama con la rama principal
@@ -150,7 +151,8 @@ git stash clear           # Elimina TODOS los stashes
 ## 🔍 Historial y recuperación  
 
 ```bash
-git reflog                # Ver todas las acciones realizadas  
+git reflog                # Ver todas las acciones realizadas
+git cherry-pick "hash"    # Poder obtener cambios de cualquier rama 
 ```
 
 ---
