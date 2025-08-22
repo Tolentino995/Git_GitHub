@@ -121,6 +121,38 @@ git stash drop            # Eliminar un stash
 ```
 
 ---
+## 📦 Git Stash – Guía Rápida
+
+- Se utiliza para guardar temporalmente los cambios en tu directorio de trabajo (sin hacer commit) y dejar el área limpia.
+
+🔨 Comandos principales
+
+```bash
+git stash                # Guarda los cambios sin nombre (default)
+git stash save "mensaje" # Guarda los cambios con un nombre descriptivo
+git stash -u             # Guarda cambios + archivos sin seguimiento (untracked)
+git stash -a             # Guarda cambios + archivos ignorados (ignored)
+```
+
+📋 Ver stashes guardados
+```bash
+git stash list           # Muestra todos los stashes
+```
+
+📂 Aplicar o recuperar cambios
+```bash
+git stash apply          # Aplica el último stash (pero lo mantiene guardado)
+git stash apply stash@{2} # Aplica un stash específico
+git stash pop            # Aplica el último stash y lo elimina de la lista
+```
+
+🗑️ Eliminar stashes
+```bash
+git stash drop stash@{0}  # Elimina un stash específico
+git stash clear           # Elimina TODOS los stashes
+```
+
+---
 
 ## 🔍 Historial y recuperación  
 
