@@ -66,8 +66,10 @@ ssh -T git@github.com
 git init                # Inicializar un repositorio Git  
 git status              # Ver el estado de los archivos  
 git add archivo.txt     # Agregar un archivo al staging  
-git add .               # Agregar todos los archivos  
-git commit -m "Mensaje del commit"  # Guardar cambios con un mensaje  
+git add .               # Agregar todos los archivos
+git reset               # Volver a sacar lo que psiste en staging
+git commit -m "Mensaje del commit"  # Guardar cambios con un mensaje
+git commit --amend      # En el caso de que quieras modificar el ultimo commit
 ```
 
 📌 *Ejemplo:*  
